@@ -1,8 +1,4 @@
 GEM
-<<<<<<< HEAD
-  remote: https://rubygems.org/
-=======
->>>>>>> e21356cce261f65b6b7c54cf5f80fdfa3e642841
   specs:
     rack (1.6.4)
     rack-protection (1.5.3)
@@ -22,11 +18,5 @@ DEPENDENCIES
   shotgun
   sinatra
 
-<<<<<<< HEAD
-RUBY VERSION
-   ruby 2.3.1p112
-
-=======
->>>>>>> e21356cce261f65b6b7c54cf5f80fdfa3e642841
 BUNDLED WITH
    1.13.2
