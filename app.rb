@@ -12,7 +12,14 @@ get '/secret' do
   <p>It's a <strong>secret</strong> page!</p>"
 end
 
-get '/cat' do
+get '/random-cat' do
   @name = ["Amigo", "Oscar", "Viking", "Dave"].sample
+  erb(:index)
+end
+
+get '/named-cat' do
+  p params
+  @name = params[:name]
+  @colour = params[:color]
   erb(:index)
 end
