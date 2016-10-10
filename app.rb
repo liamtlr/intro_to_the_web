@@ -1,17 +1,17 @@
 require 'sinatra'
 require 'shotgun'
 
-set :session_secret, 'super secret'
+set :session_secret, 'here be dragons'
 
 get '/' do
-  "Hello, world!"
+  "<h1>Hello World!</h1>"
 end
 
 get '/secret' do
-  "Ello ello"
+  "<h2>What's the Secret?</h2>
+  <p>It's a <strong>secret</strong> page!</p>"
 end
 
-
 get '/cat' do
-"<img src='http://bit.ly/1eze8aE' alt='cat' style='border: 10px solid tomato'>"
+  erb(:index)
 end
